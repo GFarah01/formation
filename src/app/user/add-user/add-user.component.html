@@ -1,0 +1,35 @@
+<div class="container">
+<form #f="ngForm">
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" placeholder="firstName" class="form-control" #firstName="ngModel" [(ngModel)]="user.firstName">
+    </div>
+
+    <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" placeholder="lastname" class="form-control" #lastname="ngModel" [(ngModel)]="user.lastName">
+    </div>
+    <div class="form-group">
+        <label for="username">User Name</label>
+        <input type="text" placeholder="username" class="form-control" #username="ngModel" [(ngModel)]="user.userName">
+    </div>
+    <div class="form-group">
+        <label for="password">First Name</label>
+        <input type="password" placeholder="salary" class="form-control" #password="ngModel" [(ngModel)]="user.password">
+    </div>
+    <div class="form-group">
+        <label for="salary">First Name</label>
+        <input type="text" placeholder="salary" class="form-control" #salary="ngModel" [(ngModel)]="user.salary">
+    </div>
+
+    <div clas="form-group">
+        <button class="btn btn-success">Create</button>
+
+    </div>
+  
+
+
+
+</form>
+
+</div>

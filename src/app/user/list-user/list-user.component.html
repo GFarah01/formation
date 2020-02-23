@@ -1,0 +1,66 @@
+<ng-container>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7 col-md-7">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>                       
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th>Birthday</th>
+                        <th>Salary</th>
+                        <th>
+                            <button class="btn btn-outline-primary btn-sm">Add USer</button>
+                        </th>
+                        
+                    </tr>
+                </thead>
+                 <tbody>
+                     <tr *ngFor="let user of users">
+                         <td>{{user.id}}</td>
+                         <td>{{user.firstName}}</td>
+                         <td>{{user.lastName}}</td>
+                         <td>{{user.userName}}</td>
+                         <td>{{user.birthday | date:"MM/dd/yy" }}</td>
+                         <td>{{user.salary | currency }}</td>
+                         <td>
+                             <button class="btn btn-outline-primary"> Edit</button>
+                             <button class="btn btn-outline-danger"> Remove</button>
+
+                         </td>
+
+
+                     </tr>
+
+
+                 </tbody>                    
+
+            </table>
+        </div>
+         
+        <!-- 
+            on va ajouter le formulaire fl blasa ali 9a3detelna 3aa jnab 
+            ()
+        -->
+        <div class="col-lg-5 col-md-5">
+            <div class="card">
+              <div class="card-header bg-info text-white">
+                  <h2>Add User </h2>
+              </div>
+              <div class="card-body">
+                  <app-add-user></app-add-user>
+              </div>
+              <div class="card-footer">
+              </div>
+            </div>
+          </div>
+
+
+
+
+    </div>
+</div>
+
+</ng-container>
